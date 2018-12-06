@@ -1,0 +1,73 @@
+/deep/body{
+  display: inline-block !important;
+}
+
+
+.custom-navbar {
+  margin-bottom: 0;
+  background-color: #080808 !important;
+  padding: 20px 0;
+}
+.video-step {
+  background-color: white !important;
+}
+
+
+
+.cms-main, .cms-main .faqs {
+  width: 100%
+}
+
+.cms-main {
+  background-color: #fff;
+  padding: 50px 0;
+  min-height: 625px;
+}
+
+.cms-main .help-faq {
+  width: 100%
+}
+
+.mat-expansion-panel-header{
+  font-family: 'Poppins', sans-serif !important;
+}
+.mat-expansion-panel-content{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .cms-main .help-faq {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .cms-main .help-faq {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .cms-main .help-faq {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+}
+
+.page-title{
+  padding: 10px;
+  h1{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+::ng-deep .page-title{
+  margin-top: 7%!important;
+}
+
+

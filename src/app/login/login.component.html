@@ -1,0 +1,86 @@
+
+
+
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- NAVBAR HEADER -->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" (click)="openMenu()">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <!-- lOGO -->
+            <a [routerLink]="['/']" class="navbar-brand">Edit Falk Photography</a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]="['/']" class="smoothScroll">Home</a></li>
+                <li><a [routerLink]="['/about']" class="smoothScroll">About</a></li>
+                <li><a [routerLink]="['/shop']" class="smoothScroll">Shop</a></li>
+                <li><a [routerLink]="['/contact-us']" class="smoothScroll">Contact Us</a></li>
+                <li><a [routerLink]="['/help']" class="smoothScroll">help</a></li>
+                <li class="active"><a [routerLink]="['/login']" class="smoothScroll">Sign IN</a></li>
+                <li><a [routerLink]="['/register']" class="smoothScroll">Sign Up</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+<section class="video-step">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-12 col-sm-12 col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Login</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cms-main">
+    <div class="container">
+        <div class="row">
+            <div class="login">
+                <div class="row">
+                    <div fxLayout="column">
+                        <form class="inq-form" fxLayout="column"
+                              fxLayoutAlign="start"
+                              fxFlex="1 0 auto" name="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+                            <div fxLayout="row" fxLayoutAlign="center" fxFlex="100 0 auto">
+                                <mat-form-field class="col-md-6 col-xs-10">
+                                    <input matInput placeholder="Email" formControlName="email" required>
+                                    <mat-error *ngIf="loginFormErrors.email.required">
+                                        Email is required!
+                                    </mat-error>
+                                    <mat-error *ngIf="loginFormErrors.email.email">
+                                        Email must be a valid email address
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div fxLayout="row" fxLayoutAlign="center" fxFlex="100 0 auto">
+                                <mat-form-field class="col-md-6 col-xs-10">
+                                    <input matInput type="password" placeholder="Password" formControlName="password" required>
+                                    <mat-error *ngIf="loginFormErrors.password.required">
+                                        Password is required!
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+
+                            <div class="button-row text-center" fxFlex="100">
+                                <button class="add-back-btn text-right btn-submit" mat-raised-button color="black">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

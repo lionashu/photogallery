@@ -1,0 +1,134 @@
+/deep/body{
+    display: inline-block !important;
+}
+
+.custom-navbar {
+    margin-bottom: 0;
+    background-color: #080808 !important;
+    padding: 20px 0;
+}
+
+.video-step {
+    background-color: white !important;
+}
+
+
+a {
+    text-decoration: none !important;
+    outline: 0
+}
+
+input, input[type=submit], textarea {
+    outline: 0
+}
+
+//input:focus, textarea:focus {
+//    box-shadow: 0 0 0 .2rem rgba(227, 227, 227, .5) !important
+//}
+
+input[type=submit]:focus {
+    box-shadow: none !important
+}
+
+@-webkit-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@-moz-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@-o-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@-ms-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+.cms-main, .cms-main .faqs {
+    width: 100%
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a, .cms-main p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400;
+    text-align: left;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal
+}
+
+.edit-profile ul li a.active {
+    background-color: #9f366e;
+    color: #fff !important;
+}
+
+.cms-main {
+    background-color: #fff;
+    padding: 50px 0;
+    min-height: 625px;
+}
+
+.cms-main .register {
+    width: 100%
+}
+
+@media only screen and (max-width: 576px) {
+    .cms-main .register {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .cms-main .register {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cms-main .register {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+}
+.cms-main .notifications .notification-right span {
+    display: block;
+    float: none;
+    font-size: 16px;
+    text-align: left;
+    padding: 0 0 0 93px
+}
+.page-title{
+    padding: 10px;
+    h1{
+        font-size: 42px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+::ng-deep .page-title{
+    margin-top: 7%!important;
+    h1{
+        margin: 20px 0 10px;
+    }
+}
+

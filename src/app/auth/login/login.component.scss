@@ -1,0 +1,447 @@
+a {
+    text-decoration: none !important;
+    outline: 0
+}
+
+input, input[type=submit], textarea {
+    outline: 0
+}
+
+//input:focus, textarea:focus {
+////    box-shadow: 0 0 0 .2rem rgba(227, 227, 227, .5) !important
+//}
+
+input[type=submit]:focus {
+    box-shadow: none !important
+}
+
+@-webkit-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@-moz-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@-o-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@-ms-keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0 -3837px
+    }
+}
+.cms-main, .cms-main .faqs {
+    width: 100%
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a, .cms-main p {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400;
+    text-align: left;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal
+}
+
+.edit-profile ul li a.active {
+    background-color: #9f366e;
+    color: #fff !important;
+}
+
+.cms-main {
+    background-color: #fff;
+    padding: 50px 0;
+    min-height: 625px;
+}
+
+.cms-main p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 0
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a {
+    padding: 15px 0;
+    font-size: 20px;
+    color: #333;
+    line-height: 2;
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a[aria-expanded=true] {
+    border-top: 2px solid #9f366e
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a h5 {
+    display: -webkit-box;
+    margin-bottom: 0
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a span.glyphicon-plus {
+    border: 2px solid #c9c9c9;
+    //background: url(../../images/add.png) center no-repeat;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    background-size: 20px;
+    border-radius: 27px;
+    margin-right: 15px
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a span.glyphicon-minus {
+    //background: url(../../images/remove.png) center no-repeat #9f366e;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    background-size: 20px;
+    border-radius: 27px;
+    margin-right: 15px
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-collapse .panel-body {
+    background: #f6f6f6;
+    padding: 20px
+}
+
+.cms-main .faqs .panel-group .panel-default .panel-collapse .panel-body p {
+    line-height: 30px
+}
+
+.cms-main .contact-us {
+    width: 100%
+}
+
+.cms-main .contact-us h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333;
+    margin-bottom: 60px
+}
+
+.cms-main .contact-us .email-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px
+}
+
+.cms-main .contact-us .email-box img {
+    position: absolute
+}
+
+.cms-main .contact-us .email-box h3 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    padding-left: 80px;
+    margin-bottom: 0;
+    padding-top: 10px
+}
+
+.cms-main .contact-us .email-box h3 b {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 900
+}
+
+.cms-main .contact-us .email-box h3 a {
+    color: #333
+}
+
+.cms-main .notifications .notification-left h2, .cms-main .notifications .notification-right h3 {
+    line-height: 1.33;
+    text-align: left;
+    color: #666;
+    letter-spacing: normal;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.cms-main .contact-us #map {
+    height: 300px
+}
+
+.cms-main .notifications {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative
+}
+
+.cms-main .notifications:after, .cms-main .notifications:before {
+    position: absolute;
+    top: 50%;
+    content: ''
+}
+
+.cms-main .notifications:before {
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    left: 13%;
+    border-radius: 10px;
+    margin-top: -8px;
+    border: 2px solid #9f366e;
+    z-index: 1
+}
+
+.cms-main .notifications:after {
+    border-right: 2px solid #f6f6f6;
+    height: 100%;
+    left: 13.6%;
+    margin-top: 7px
+}
+
+.cms-main .notifications:last-child:after {
+    display: none
+}
+
+.cms-main .notifications .notification-left {
+    position: relative
+}
+
+.cms-main .notifications .notification-left h2 {
+    font-family: AvenirLTStd-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0
+}
+
+.cms-main .notifications .notification-right {
+    border-radius: 5.2px;
+    background-color: #fff;
+    box-shadow: 1.5px 2.6px 32px 0 rgba(7, 8, 8, .09);
+    padding: 19px;
+    position: relative
+}
+
+.cms-main .notifications .notification-right.active:after {
+    position: absolute;
+    background-color: #9f366e;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 8px;
+    left: 8px;
+    border-radius: 12px
+}
+
+.cms-main .notifications .notification-right img {
+    position: absolute;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px
+}
+
+.cms-main .notifications .notification-right h3 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 20px 0 20px 93px;
+    width: 90%
+}
+
+.cms-main .notifications .notification-right h3 b {
+    word-break: break-all;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 900;
+    color: #333
+}
+
+.cms-main .notifications .notification-right span {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: right;
+    float: right;
+    color: #666;
+    padding: 20px 0
+}
+@media only screen and (max-width: 576px) {
+
+    .cms-main .faqs .panel-group .panel-default {
+        padding: 10px 15px;
+        margin: 0
+    }
+
+    .cms-main .faqs .panel-group .panel-default .panel-heading .panel-title a {
+        display: block
+    }
+
+    .cms-main .contact-us {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .cms-main .contact-us h2 {
+        font-size: 20px
+    }
+
+    .cms-main .contact-us .email-box img {
+        width: 50px
+    }
+
+    .cms-main .contact-us .email-box h3 {
+        font-size: 17px;
+        padding-left: 65px
+    }
+
+    .cms-main .notifications .row {
+        margin: 0
+    }
+
+    .cms-main .notifications .notification-right {
+        text-align: center;
+        padding: 8px
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .cms-main .contact-us {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .cms-main .contact-us h2 {
+        font-size: 20px
+    }
+
+    .cms-main .contact-us .email-box img {
+        width: 50px
+    }
+
+    .cms-main .contact-us .email-box h3 {
+        font-size: 17px;
+        padding-left: 65px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .remove-btn {
+        right: -9px;
+    }
+    .login-main .container .row .login {
+        width: 80%
+    }
+
+    .header-main .search-bar {
+        width: 100%
+    }
+
+    .header-main .notification {
+        margin-right: 20px
+    }
+
+    .header-main .sidenav a, .video-step h2 {
+        text-align: left
+    }
+
+    .footer-main ul {
+        padding: 0
+    }
+
+    .footer-main ul li a {
+        font-size: 15px;
+        text-align: right;
+        margin-left: 6px
+    }
+
+    .edit-profile ul li a {
+        width: 166px;
+        font-size: 16px
+    }
+
+    .cms-main .contact-us {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .cms-main .contact-us h2 {
+        font-size: 20px
+    }
+
+    .cms-main .contact-us .email-box img {
+        width: 50px
+    }
+
+    .cms-main .contact-us .email-box h3 {
+        font-size: 17px;
+        padding-left: 65px
+    }
+
+    .cms-main .notifications .notification-left h2 {
+        font-size: 17px
+    }
+
+    .cms-main .notifications .notification-right h3 {
+        font-size: 17px;
+        padding: 0 0 0 93px;
+        width: 100%
+    }
+}
+.cms-main .notifications .notification-right span {
+    display: block;
+    float: none;
+    font-size: 16px;
+    text-align: left;
+    padding: 0 0 0 93px
+}
+.page-title{
+    padding: 10px;
+    h1{
+        font-size: 42px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+::ng-deep .img-fluid{
+    max-width: 50px;
+}
+
+::ng-deep .shop-custom{
+    margin-top: 2%!important;
+}
+::ng-deep .page-title{
+    margin-top: 7%!important;
+    h1{
+        margin: 20px 0 10px;
+    }
+}
+/*::ng-deep .container{
+  overflow-y: scroll;
+  max-height: 500px
+}*/

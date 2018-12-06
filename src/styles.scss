@@ -1,0 +1,89 @@
+// Import Fuse core library
+@import "@fuse/scss/core";
+
+// Import app.theme.scss
+
+@import "app/app.theme";
+
+$font-stack:    phenomena;
+
+body {
+  font: 100% $font-stack;
+}
+
+
+a:not(.mat-button):not(.mat-raised-button):not(.mat-icon-button):hover, a:not(.mat-button):not(.mat-raised-button):not(.mat-icon-button):active{
+    text-decoration: none !important;
+}
+
+
+.slides link .ng-star-inserted .selected .slide-in-left{
+    top: 100vh !important;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .custom-navbar .nav li a {
+        margin: 15px 10px !important;
+    }
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/assets/fonts/Phenomena-Light.otf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/assets/fonts/Phenomena-Light.otf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/assets/fonts/Phenomena-Light.otf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/assets/fonts/Phenomena-Light.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/assets/fonts/Phenomena-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../src/assets/fonts/icomoon.eot?41p6go');
+    src: url('../src/assets/fonts/icomoon.eot?41p6go#iefix') format('embedded-opentype'),
+    url('../src/assets/fonts/icomoon.ttf?41p6go') format('truetype'),
+    //url('../src/assets/fonts/icomoon.woff?41p6go') format('woff'),
+    url('../src/assets/fonts/icomoon.svg?41p6go#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+.btn-submit {
+    margin-top: 15px !important;
+    border-radius: 99em !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    padding: 5px 30px !important;
+}
+.smoothScroll{
+    font-size: 30px;
+}

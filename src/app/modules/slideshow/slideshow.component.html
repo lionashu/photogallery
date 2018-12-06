@@ -1,0 +1,60 @@
+<div #container
+     (touchstart)="onSwipe($event, 'start')"
+     (touchend)="onSwipe($event, 'end')"
+     class="slideshow-container">
+  <!-- slides -->
+  <a *ngFor="let slide of slides; let i = index"
+     class="slides"
+     href="{{slide?.image?.clickAction ? '#' : slide?.image?.href}}"
+     title="{{slide?.image?.title}}"
+     [ngStyle]="getSlideStyle(i)"
+     [class.selected]="slide?.selected"
+     [class.hide-slide]="!slide?.selected && !slide?.leftSide && !slide?.rightSide"
+     [class.left-side]="slide?.leftSide"
+     [class.right-side]="slide?.rightSide"
+     [class.slide-in-left]="slide?.action === 'slideInLeft'"
+     [class.slide-in-right]="slide?.action === 'slideInRight'"
+     [class.slide-out-left]="slide?.action === 'slideOutLeft'"
+     [class.slide-out-right]="slide?.action === 'slideOutRight'"
+     [class.link]="slide?.image?.clickAction || slide?.image?.href"
+     (click)="onClick($event)">
+    <div class="loader"
+         *ngIf="!slide?.loaded"></div>
+    <div *ngIf="showCaptions && slide?.image?.caption"
+         class="caption"
+         [ngStyle]="{
+           'color': captionColor,
+           'background-color': captionBackground
+          }"
+         [innerHTML]="slide?.image?.caption">
+    </div>
+  </a>
+  <!-- left arrow -->
+  <div [class.display-none]="!this.showArrows"
+       (click)="onSlide(-1)"
+       class="arrow-container prev">
+    <i #prevArrow
+       title="Previous"
+       class="arrow prev"></i>
+  </div>
+  <!-- right arrow -->
+  <div [class.display-none]="!this.showArrows"
+       (click)="onSlide(1)"
+       class="arrow-container next">
+    <i #nextArrow
+       title="Next"
+       class="arrow next"></i>
+  </div>
+  <!-- dots -->
+  <ul class="slick-dots"
+      *ngIf="showDots">
+    <li *ngFor="let slide of slides; let index = index"
+        (click)="goToSlide(index)"
+        [class.slick-active]="slide.selected">
+      <button type="button"
+              [attr.style]="sanitizer.bypassSecurityTrustStyle('--dot-color:' + dotColor)">
+        {{index}}
+      </button>
+    </li>
+  </ul>
+</div>

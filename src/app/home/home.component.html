@@ -1,0 +1,74 @@
+
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- NAVBAR HEADER -->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" (click)="openMenu()">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <!-- lOGO -->
+            <a [routerLink]="['/']" class="navbar-brand"><img src="./assets/images/logos/edit.png" style="    margin-top: -30px;
+                height: 117px;
+                width: 235px;"></a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a [routerLink]="['/']" class="smoothScroll">Home</a></li>
+                <li><a [routerLink]="['/about']" class="smoothScroll">About</a></li>
+                <li><a [routerLink]="['/shop']" class="smoothScroll">Shop</a></li>
+                <li><a [routerLink]="['/contact-us']" class="smoothScroll">Contact Us</a></li>
+                <li><a [routerLink]="['/help']" class="smoothScroll">help</a></li>
+                <li><a [routerLink]="['/login']" class="smoothScroll">Sign IN</a></li>
+                <li><a [routerLink]="['/register']" class="smoothScroll">Sign Up</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div style="margin-bottom:25px;">
+
+    <div class="home-slider" style="display:block;"
+         [style.width]="width">
+        <slideshow #slideshow
+                   [imageUrls]="imageUrls"
+                   [height]="height"
+                   [minHeight]="minHeight"
+                   [arrowSize]="arrowSize"
+                   [showArrows]="showArrows"
+                   [disableSwiping]="disableSwiping"
+                   [autoPlay]="autoPlay"
+                   [stopAutoPlayOnSlide]="stopAutoPlayOnSlide"
+                   [debug]="debug"
+                   [autoPlayInterval]="autoPlayInterval"
+                   [backgroundSize]="backgroundSize"
+                   [backgroundPosition]="backgroundPosition"
+                   [backgroundRepeat]="backgroundRepeat"
+                   [showDots]="showDots"
+                   [dotColor]="dotColor"
+                   [showCaptions]="showCaptions"
+                   [captionColor]="captionColor"
+                   [captionBackground]="captionBackground"
+                   [lazyLoad]="lazyLoad"
+                   [hideOnNoSlides]="hideOnNoSlides">
+
+
+        </slideshow>
+    </div>
+    <!--<div>
+        <button class="demo">demosdsdsddsd</button>
+    </div>-->
+<div class="silder-text">
+    <h2>
+        {{text}}
+        <br>
+        {{text_two}}
+    </h2>
+
+</div>
+
+</div>
